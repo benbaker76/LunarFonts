@@ -1052,7 +1052,7 @@ namespace LunarLabs.Fonts
             var g = GetGlyfOffset(glyphIndex);
 
             if (g < 0)
-                return null;
+                return new List<Vertex>();
 
             var result = new List<Vertex>();
             var numberOfContours = ReadS16((uint)g);
